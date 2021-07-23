@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container1{
+    border: .5vw solid  red;
+    height: 80vh;
+    width: 93vw;
+    margin:3vh 3.25vw 3vh 3.25vw;
+    display: flex;
+}
+.container2{
+    /* border: .5vw solid  red; */
+    height: 80vh;
+    width: 93vw;
+    margin:3vh 3.25vw 3vh 3.25vw;
+    /* display: flex; */
+    background-color: black;
+    box-shadow: 5px 5px 5px white,-5px -5px 5px white;
+    border-radius:3%;
+}
+.container3{
+    /* border: .5vw solid  red; */
+    height: 80vh;
+    width: 93vw;
+    margin:3vh 3.25vw 3vh 3.25vw;
+    display: flex;
+    background-color: yellow;
+    box-shadow: 5px 5px 5px rgb(58, 22, 22),-5px -5px 5px rgb(37, 20, 20);;
+    border-radius:3%;
+}
+.container4{
+    width:33vw;
+    color:rgb(137, 247, 35);
+    font-size:3vw;
+    margin-left: 3vw;
+    /* margin-top: 1vh; */
+    font-family: 'Bungee Shade', cursive; 
+}
+#hr{
+    box-shadow:3px 5px 5px white;
+    border-radius:3%;
+    background-color: black;
+    /* margin-top:1vh; */
+}
+#form{
+    color:white;
+    margin-left: 4vw;
+    margin-top: 3vh;
+}
+label,#setName,#setTime,#ringtone{
+    font-size: 2.5vw;
+}
+input,option{
+    width:18vw;
+    height:5vh;
+    font-size:1.8vw;
+    margin-top:3vh;
+}
+#ringtone{
+    margin-top:3vh;
+}
+#setTime{
+    font-size:3vw;
+}
+.myButton {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, black 55%, white 100%);
+	background-color:black;
+	border-radius:10%;
+	/* border:1px solid #d6bcd6; */
+	display:inline;
+    position: relative;
+	cursor:pointer;
+	color:rgb(137, 247, 35);
+	font-size:2vw;
+    font-family: 'Bungee Shade', cursive; 
+	font-weight:bold;
+	padding:1vh 1vw;
+	/* text-shadow:0px 1px 0px #e1e2ed; */
+    margin-top:5vh;
+    margin-left: 7vw;
+}
+.myButton:hover {
+	/* background:linear-gradient(to bottom, white 100%,black 55%); */
+    background-image: linear-gradient(40deg,black 55%,white 100%);
+	background-color:black;
+}
+.myButton:active {
+    /* position:fixed; */
+	top:1px;
+}
+#clock1{
+    height:13vh;
+    width:6vw;
+    margin-top:6vh;
+    margin-left: 4vw;
+}
+
