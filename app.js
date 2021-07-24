@@ -67,7 +67,8 @@ function showAlarms() {
                 <div class="savedRingtone">
                     ${element.Ringtone}
                 </div>
-                <div>
+                <div id="images">
+                    <img class="plusBtn" id="plus${index}" onclick="AddAlarm(this.id)" src="plus sign.jpg" />
                     <img class="closeBtn" id="${index}" onclick="deleteAlarm(this.id)"
                         src="cross img1.jpg" />
                 </div>
@@ -95,11 +96,21 @@ function deleteAlarm(index) {
     localStorage.setItem("alarms", JSON.stringify(alarmsObj));
     showAlarms();
 }
-// if(setTime.value == ``)
-
-
-
-// console.log(tConvert(setTime.value));
+function AddAlarm(index){
+    let alarms = localStorage.getItem('alarms');
+    if (alarms == null) {
+        alarmsObj = [];
+    }
+    else {
+        alarmsObj = JSON.parse(alarms);
+    }
+    let ans=index.slice(4);
+    alarmsObj[ans].active = true;
+    document.getElementById(`box${index}`).style.backgroundColor="black";
+    document.getElementById(`plus${index}`).style.visibility="hidden";
+    localStorage.setItem("alarms", JSON.stringify(alarmsObj));
+    showAlarms();
+}
 
 function textspeak(text) {
     responsiveVoice.speak(text);
@@ -123,11 +134,15 @@ function display_ct() {
         }
         if(element.active==false){
             document.getElementById(`box${index}`).style.backgroundColor="#cccccc";
+            document.getElementById(`plus${index}`).style.visibility="visible";
             localStorage.setItem("alarms", JSON.stringify(alarmsObj));
+            // showAlarms();
         }
         else if(element.active==true){
             document.getElementById(`box${index}`).style.backgroundColor="black";
+            document.getElementById(`plus${index}`).style.visibility="hidden";
             localStorage.setItem("alarms", JSON.stringify(alarmsObj));
+            // showAlarms();
         }
     });
     display_c();
