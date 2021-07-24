@@ -33,7 +33,7 @@ addAlarm.addEventListener('click', () => {
         AlarmName: alarmName.value,
         active:true
     }
-    if(alarmName.value.length>0 && setTime.value.length==8){
+    if(alarmName.value.length>0 && (setTime.value.length==8 || setTime.value.length== 11 || setTime.value.length==12)){
         alarmsObj.push(myAlarms);
     }
     else if(alarmName.value.length<=0 || setTime.value.length!=8){
@@ -123,9 +123,10 @@ function display_c() {
 function display_ct() {
     let theDate = new Date();
     let date = theDate.toLocaleTimeString();
+    console.log(date);
     document.getElementById('currTime').innerHTML = date;
     alarmsObj.forEach(function (element,index) {
-        if(tConvert(element.time)== date && element.active==true){
+        if((tConvert(element.time)== date || element.time==date ) && element.active==true){
             textspeak(element.AlarmName);
             let musicSrc=element.Ringtone;  
             let music= new Audio(musicSrc+'.mp3');
