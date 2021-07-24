@@ -7,50 +7,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Handlee&family=Khand:wght@300&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Alarm</title>
 </head>
 
-<body>
+<body onload="display_c()">
     <!-- <audio src="ringtone2.mp3" controls></audio>
     <audio src="ringtone3.mp3" controls></audio> -->
     <div id="container1" class="container">
         <div class="container2">
             <div class="container4">
-                <center>
+                <center id="currTime">
                     23:07 AM
                 </center>
                 <hr id="hr">
             </div>
             <br>
-            <div id="form">
-                <form action="">
+            <div id="fillForm">
+                <form id="form" name="form">
                     <div id="time">
                         <span id="setName">Set Time: </span>
-                        <span id="setTime">&nbsp;&nbsp;12:00 PM</span>
+                        <input type="time" name="setTime" id="setTime" step="2">
                     </div>
                     <label for="alarmName">Alarm Name :</label>
-                    <input type="text" id="alarmName"><br>
-                    <label for="setDate">Set Date: </label>
-                    <input type="date" name="setDate" id="setDate"><br>
+                    <input type="text" id="alarmName" maxlength="15"><br>
+                    <!-- <label for="setDate">Set Date: </label>
+                    <input type="date" name="setDate" id="setDate"><br> -->
                     <label for="ringtone">Ringtone :</label>
                     <select name="ringtone" id="ringtone">
-                        <option id="mute"value="mute">Mute</option>
-                        <option id="ringtone1"value="ringtone1">Ringtone 1</option>
-                        <option id="ringtone2"value="ringtone2">Ringtone 2</option>
-                        <option id="ringtone3"value="ringtone3">Ringtone 3</option>
+                        <option id="mute" value="mute">Mute</option>
+                        <option id="ringtone1" selected="selected" value="ringtone1">Ringtone 1</option>
+                        <option id="ringtone2" value="ringtone2">Ringtone 2</option>
+                        <option id="ringtone3" value="ringtone3">Ringtone 3</option>
                     </select><br>
                     <!-- <img src="images.png"id= "clock1"alt=""> -->
-                    <button class="myButton">Add Alarm</button>
+                    <button class="myButton" id="addAlarm">Add Alarm</button>
                 </form>
             </div>
         </div>
-        <div class="container3">
-            hi
+        <div id="container3">
+            <div class="box">
+                <div class="AlarmName">
+                    sahil pararshar
+                </div>
+                <div class="savedTime">
+                    12:00:00
+                </div>
+                <div class="savedRingtone">
+                    ringtone1
+                </div>
+                <div>
+                    <img class="closeBtn" id="${index}" onclick="deleteAlarm(this.id)"
+                        src="cross img1.jpg" />
+                </div>
+            </div>
         </div>
     </div>
-
     <script src="app.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
 
 </body>
 
