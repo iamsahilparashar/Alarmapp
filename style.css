@@ -164,6 +164,8 @@ input,option{
 
 /* ====================================================================================================================== */
 @media (max-width:786px)and (min-width:470px){
+    
+    
     .container2{
         /* border: .5vw solid  red; */
         height: 45vw;
@@ -190,6 +192,15 @@ input,option{
 /* ====================================================================================================================== */
 
 @media (max-width:470px) and (min-width:330px){
+    #container1{
+        /* border: .5vw solid  red; */
+        height: 98%;
+        width: 93%;
+        margin:3vh 3.25vw 3vh 3.25vw;
+        /* display: flex; */
+        background-image: linear-gradient(60deg,black 55%,white 100%);
+        display:block;
+    }
     .container2{
         /* border: .5vw solid  red; */
         height: 55vw;
@@ -199,6 +210,7 @@ input,option{
         background-color: black;
         box-shadow: 5px 5px 5px white,-5px -5px 5px white;
         border-radius:3%;
+        display: block;
     }
     #container3{
         /* border: .5vw solid  red; */
@@ -210,58 +222,169 @@ input,option{
         border-radius:3%;
         overflow-y: scroll;
         overflow-x: hidden;    
+        display: block;
     }
 } 
 
 /* ====================================================================================================================== */
 
-@media (max-width:330px) and (min-width:218px){
+@media (max-width:450px){
+    #container1{
+        /* border: .5vw solid  red; */
+        height: 98%;
+        width: 93%;
+        margin:3vh 3.25vw 3vh 3.25vw;
+        /* display: flex; */
+        background-image: linear-gradient(60deg,black 55%,white 100%);
+        display: inline;
+    }
     .container2{
         /* border: .5vw solid  red; */
-        height: 65vw;
+        height: 50vh;
         width: 93%;
         margin:3vh 3.25vw 3vh 3.25vw;
         /* display: flex; */
         background-color: black;
         box-shadow: 5px 5px 5px white,-5px -5px 5px white;
         border-radius:3%;
+        display:block;
     }
     #container3{
         /* border: .5vw solid  red; */
-        height:65vw;
+        height:50vh;
         width: 93%;
         margin:3vh 3.25vw 3vh 3.25vw;
         background-color: white;
         box-shadow: 5px 5px 5px rgb(58, 22, 22),-5px -5px 5px rgb(37, 20, 20);;
         border-radius:3%;
         overflow-y: scroll;
+        display: inline-block;
         overflow-x: hidden;    
     }
-} 
-
-
-/* ====================================================================================================================== */
-
-@media (max-width:218px){
-    .container2{
-        /* border: .5vw solid  red; */
-        height: 100vw;
-        width: 93%;
-        margin:3vh 3.25vw 3vh 3.25vw;
-        /* display: flex; */
+    .container4{
+        width:85%;
+        color:rgb(137, 247, 35);
+        font-size:8vw;
+        margin-left: 3vw;
+        /* margin-top: 1vh; */
+        font-family: 'Bungee Shade', cursive; 
+    }
+    #hr{
+        box-shadow:3px 5px 5px white;
+        border-radius:3%;
         background-color: black;
-        box-shadow: 5px 5px 5px white,-5px -5px 5px white;
-        border-radius:3%;
+        /* margin-top:1vh; */
     }
-    #container3{
-        /* border: .5vw solid  red; */
-        height:100vw;
+    #fillForm{
+        color:white;
+        margin-left: 4vw;
+        margin-top: 3%;
+    }
+    label,#setName,#setTime,#ringtone{
+        font-size: 8vw;
+    }
+    input,option{
+        width:40%;
+        height:4%;
+        font-size:8vw;
+        margin-top:3vh;
+        font-family:fantasy;
+    }
+    #ringtone{
+        margin-top:3vh;
+    }
+    #setTime{
+        font-size:8vw;
+    }
+    .myButton {
+        box-shadow: 3px 4px 0px 0px #899599;
+        background:linear-gradient(to bottom, black 55%, white 100%);
+        background-color:black;
+        border-radius:10%;
+        /* border:1px solid #d6bcd6; */
+        display:inline;
+        position: relative;
+        cursor:pointer;
+        color:rgb(137, 247, 35);
+        font-size:6vw;
+        font-family: 'Bungee Shade', cursive; 
+        font-weight:bold;
+        padding:1vh 1vw;
+        /* text-shadow:0px 1px 0px #e1e2ed; */
+        margin-top:5vh;
+        margin-left: 7vw;
+    }
+    .myButton:hover {
+        /* background:linear-gradient(to bottom, white 100%,black 55%); */
+        background-image: linear-gradient(40deg,black 55%,white 100%);
+        background-color:black;
+    }
+    .myButton:active {
+        /* position:fixed; */
+        top:1px;
+    }
+    #clock1{
+        height:13vh;
+        width:6vw;
+        margin-top:6vh;
+        margin-left: 4vw;
+    }
+    
+    .box{
+        /* border: 4px solid rgb(138, 141, 135); */
         width: 93%;
-        margin:3vh 3.25vw 3vh 3.25vw;
+        border-radius: 20px;
+        margin: 2% 3% 0% 3%;
+        background-color: black;
+        color: white;
+    }
+    .AlarmName{
+        width:52%;
+        font-size:6vw;
+        /* border: 2px solid green; */
+        margin: 2% 2% 3% 3%;
+        font-family: 'Khand', cursive;
+        color: white;
+    }
+    .savedTime{
+        width: 50%;
+        margin: -11% 2% 0% 3%;
+        color: rgb(137, 247, 35);
+        font-size: 6vw;
+        /* border: 2px solid red; */
+        font-family: 'Bungee Shade', cursive; 
+    }
+    .savedRingtone{
+        width: 40%;
+        margin: -22% 2% 0% 46%;
+        color: rgb(137, 247, 35);
+        font-size: 6vw;
+        /* border: 2px solid yellow; */
+        font-family: 'Bungee Shade', cursive;
+    }
+    .plusBtn{
         background-color: white;
-        box-shadow: 5px 5px 5px rgb(58, 22, 22),-5px -5px 5px rgb(37, 20, 20);;
-        border-radius:3%;
-        overflow-y: scroll;
-        overflow-x: hidden;    
+        border-radius: 100%;
+        height: 30%;
+        width: 30%;
+        visibility: hidden;
+        /* visibility: inherit; */
+        /* border: 2px solid pink; */
+    }
+    .closeBtn{
+        background-color: white;
+        border-radius: 100%;
+        height:30%;
+        width: 30%;
+        margin-left: 3%;
+        /* margin: 0% 2% 0% 90%; */
+    }
+    #images{
+        display:flex;
+        height:30%;
+        width: 60%;
+        margin: 2% 2% 0% 60%;
+        /* border: 2px solid red; */
     }
 } 
+
