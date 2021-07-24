@@ -281,12 +281,12 @@ input,option{
         margin-top: 3%;
     }
     label,#setName,#setTime,#ringtone{
-        font-size: 8vw;
+        font-size: 6vw;
     }
     input,option{
         width:40%;
         height:4%;
-        font-size:8vw;
+        font-size:5vw;
         margin-top:3vh;
         font-family:fantasy;
     }
@@ -348,7 +348,7 @@ input,option{
     }
     .savedTime{
         width: 50%;
-        margin: -11% 2% 0% 3%;
+        margin: 0% 2% 0% 3%;
         color: rgb(137, 247, 35);
         font-size: 6vw;
         /* border: 2px solid red; */
@@ -356,7 +356,7 @@ input,option{
     }
     .savedRingtone{
         width: 40%;
-        margin: -22% 2% 0% 46%;
+        margin: 0% 2% 0% 46%;
         color: rgb(137, 247, 35);
         font-size: 6vw;
         /* border: 2px solid yellow; */
