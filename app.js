@@ -133,7 +133,7 @@ function display_ct() {
             element.active = false;
         }
         if(element.active==false){
-            document.getElementById(`box${index}`).style.backgroundColor="#cccccc";
+            document.getElementById(`box${index}`).style.backgroundColor="rgb(80 20 20)";
             document.getElementById(`plus${index}`).style.visibility="visible";
             localStorage.setItem("alarms", JSON.stringify(alarmsObj));
             // showAlarms();
