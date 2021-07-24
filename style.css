@@ -2,16 +2,21 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: linear-gradient(60deg,black 55%,white 100%);
+    background-repeat: no-repeat;
+}
 #container1{
-    border: .5vw solid  red;
+    /* border: .5vw solid  red; */
     height: 98%;
     width: 93%;
     margin:3vh 3.25vw 3vh 3.25vw;
     display: flex;
+    background-image: linear-gradient(60deg,black 55%,white 100%);
 }
 .container2{
     /* border: .5vw solid  red; */
-    height: 33vw;
+    height:37vw;
     width: 93%;
     margin:3vh 3.25vw 3vh 3.25vw;
     /* display: flex; */
@@ -21,7 +26,7 @@
 }
 #container3{
     /* border: .5vw solid  red; */
-    height:33vw;
+    height:37vw;
     width: 93%;
     margin:3vh 3.25vw 3vh 3.25vw;
     background-color: white;
@@ -47,7 +52,7 @@
 #fillForm{
     color:white;
     margin-left: 4vw;
-    margin-top: 3vh;
+    margin-top: 3%;
 }
 label,#setName,#setTime,#ringtone{
     font-size: 2.5vw;
@@ -138,3 +143,108 @@ input,option{
     width: 10%;
     margin: 0% 2% 0% 90%;
 }
+
+
+/* ====================================================================================================================== */
+@media (max-width:786px)and (min-width:470px){
+    .container2{
+        /* border: .5vw solid  red; */
+        height: 45vw;
+        width: 93%;
+        margin:3vh 3.25vw 3vh 3.25vw;
+        /* display: flex; */
+        background-color: black;
+        box-shadow: 5px 5px 5px white,-5px -5px 5px white;
+        border-radius:3%;
+    }
+    #container3{
+        /* border: .5vw solid  red; */
+        height:45vw;
+        width: 93%;
+        margin:3vh 3.25vw 3vh 3.25vw;
+        background-color: white;
+        box-shadow: 5px 5px 5px rgb(58, 22, 22),-5px -5px 5px rgb(37, 20, 20);;
+        border-radius:3%;
+        overflow: scroll;
+    
+    }
+}
+
+/* ====================================================================================================================== */
+
+@media (max-width:470px) and (min-width:330px){
+    .container2{
+        /* border: .5vw solid  red; */
+        height: 55vw;
+        width: 93%;
+        margin:3vh 3.25vw 3vh 3.25vw;
+        /* display: flex; */
+        background-color: black;
+        box-shadow: 5px 5px 5px white,-5px -5px 5px white;
+        border-radius:3%;
+    }
+    #container3{
+        /* border: .5vw solid  red; */
+        height:55vw;
+        width: 93%;
+        margin:3vh 3.25vw 3vh 3.25vw;
+        background-color: white;
+        box-shadow: 5px 5px 5px rgb(58, 22, 22),-5px -5px 5px rgb(37, 20, 20);;
+        border-radius:3%;
+        overflow: scroll;
+    
+    }
+} 
+
+/* ====================================================================================================================== */
+
+@media (max-width:330px) and (min-width:218px){
+    .container2{
+        /* border: .5vw solid  red; */
+        height: 65vw;
+        width: 93%;
+        margin:3vh 3.25vw 3vh 3.25vw;
+        /* display: flex; */
+        background-color: black;
+        box-shadow: 5px 5px 5px white,-5px -5px 5px white;
+        border-radius:3%;
+    }
+    #container3{
+        /* border: .5vw solid  red; */
+        height:65vw;
+        width: 93%;
+        margin:3vh 3.25vw 3vh 3.25vw;
+        background-color: white;
+        box-shadow: 5px 5px 5px rgb(58, 22, 22),-5px -5px 5px rgb(37, 20, 20);;
+        border-radius:3%;
+        overflow: scroll;
+    
+    }
+} 
+
+
+/* ====================================================================================================================== */
+
+@media (max-width:218px){
+    .container2{
+        /* border: .5vw solid  red; */
+        height: 100vw;
+        width: 93%;
+        margin:3vh 3.25vw 3vh 3.25vw;
+        /* display: flex; */
+        background-color: black;
+        box-shadow: 5px 5px 5px white,-5px -5px 5px white;
+        border-radius:3%;
+    }
+    #container3{
+        /* border: .5vw solid  red; */
+        height:100vw;
+        width: 93%;
+        margin:3vh 3.25vw 3vh 3.25vw;
+        background-color: white;
+        box-shadow: 5px 5px 5px rgb(58, 22, 22),-5px -5px 5px rgb(37, 20, 20);;
+        border-radius:3%;
+        overflow: scroll;
+    
+    }
+} 

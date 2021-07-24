@@ -57,7 +57,7 @@ function showAlarms() {
     let html = "";
     alarmsObj.forEach(function (element, index) {
         html += `
-        <div class="box">
+        <div class="box" id="box${index}">
                 <div class="AlarmName">
                     ${element.AlarmName}
                 </div>
@@ -113,13 +113,21 @@ function display_ct() {
     let theDate = new Date();
     let date = theDate.toLocaleTimeString();
     document.getElementById('currTime').innerHTML = date;
-    alarmsObj.forEach(function (element) {
+    alarmsObj.forEach(function (element,index) {
         if(tConvert(element.time)== date && element.active==true){
             textspeak(element.AlarmName);
             let musicSrc=element.Ringtone;  
             let music= new Audio(musicSrc+'.mp3');
             music.play();
             element.active = false;
+        }
+        if(element.active==false){
+            document.getElementById(`box${index}`).style.backgroundColor="#cccccc";
+            localStorage.setItem("alarms", JSON.stringify(alarmsObj));
+        }
+        else if(element.active==true){
+            document.getElementById(`box${index}`).style.backgroundColor="black";
+            localStorage.setItem("alarms", JSON.stringify(alarmsObj));
         }
     });
     display_c();
