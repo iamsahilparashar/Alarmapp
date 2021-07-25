@@ -1,11 +1,11 @@
-var password="sahil2381";
-var pass=prompt("Please enter the Password");
-if(pass == password){
-    alert("password correct, click ok to enter");
-}
-else{
-    window.location.reload();
-}
+// var password="sahil2381";
+// var pass=prompt("Please enter the Password");
+// if(pass == password){
+//     alert("password correct, click ok to enter");
+// }
+// else{
+//     window.location.reload();
+// }
 showAlarms();
 function tConvert(time) {
     // Check correct time format and split into components
