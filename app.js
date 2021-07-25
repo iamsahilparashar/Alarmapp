@@ -1,4 +1,11 @@
-
+var password="sahil2381";
+var pass=prompt("Please enter the Password");
+if(pass == password){
+    alert("password correct, click ok to enter");
+}
+else{
+    window.location.reload();
+}
 showAlarms();
 function tConvert(time) {
     // Check correct time format and split into components
@@ -80,7 +87,6 @@ function showAlarms() {
         document.getElementById('container3').innerHTML = html;
     else {
         document.getElementById('container3').innerHTML = "<h2><center>No Upcoming Alarm</center></h2>";
-
     }
 }
 
